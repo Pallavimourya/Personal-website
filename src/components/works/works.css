@@ -52,10 +52,13 @@
     border-radius: 8px;
 }
 
-.projectDesc {
+.projectInfo {
     width: 50%;
     padding: 0 1rem;
     text-align: left;
+}
+
+.projectDesc {
     font-size: 1rem;
     color: #455a64; /* Darker Blue-Grey for description color */
 }
@@ -68,6 +71,7 @@
     background: #607d8b; /* Blue-Grey for button background */
     color: white; /* Button text color */
     font-size: 1rem;
+    text-decoration: none; /* Remove underline from link */
 }
 
 @media screen and (max-width: 585px) {
