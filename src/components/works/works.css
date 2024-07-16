@@ -1,0 +1,85 @@
+#works {
+    margin: 0 auto;
+    min-height: calc(100vh - 4rem);
+    width: 100vw;
+    max-width: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 1rem;
+    background: whitesmoke; /* Section background color */
+}
+
+.worksTitle {
+    margin: 1rem 0;
+    font-size: 3rem;
+    color: #607d8b; /* Blue-Grey for title color */
+}
+
+.worksDesc {
+    font-weight: 300;
+    font-size: 1rem;
+    color: #455a64; /* Darker Blue-Grey for description color */
+}
+
+.projects {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0.5rem 0;
+    width: 100%;
+    height: 15rem; /* Fixed height */
+    max-width: 60rem;
+    padding: 0.5rem; /* Reduced padding */
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+.projectImg {
+    width: 45%;
+    height: 100%; /* Adjust to fill project box */
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.projectDesc {
+    width: 50%;
+    padding: 0 1rem;
+    text-align: left;
+    font-size: 1rem;
+    color: #455a64; /* Darker Blue-Grey for description color */
+}
+
+.workBtn {
+    margin: 3rem 0;
+    padding: 0.5rem 2.5rem;
+    border: none;
+    border-radius: 2rem;
+    background: #607d8b; /* Blue-Grey for button background */
+    color: white; /* Button text color */
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 585px) {
+    .project {
+        flex-direction: column;
+    }
+
+    .projectImg, .projectDesc {
+        width: 100%;
+    }
+
+    .projectImg {
+        margin-bottom: 1rem;
+    }
+}
