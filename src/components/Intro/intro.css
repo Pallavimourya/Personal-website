@@ -1,68 +1,80 @@
-#intro {
-    height: calc(100vh - 4rem);
+  #intro {
+    height: calc(100vh - 5rem); /* Full height minus header/footer if any */
     width: 100vw;
-    max-width: 75rem;
+    max-width: 105rem;
     margin: 0 auto;
     overflow: hidden;
     position: relative;
-}
-
-.bg {
+    padding: 0 1rem; /* Padding for small screens */
+  }
+  
+  .bg {
     position: absolute;
-    top: -8rem;
-    right: -50px;
-    z-index: -1;
+    top: -3rem;
+    right: 150px;
+    z-index: 0; /* Background layer */
     object-fit: cover;
-    height: 100vh;
-    width: 50vw;
-}
-
-.introContent {
-    height: 100vh;
-    width: 100vw;
-    padding: 2rem;
+    height: 90vh;
+    width: 40vw;
+  }
+  
+  .introContent {
+    position: relative; /* Establishes a stacking context */
+    z-index: 2; /* Content layer above overlay */
+    height: 100%;
+    width: 100%;
+    padding: 12rem;
     font-size: 3rem;
     font-weight: 700;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: #455a64; /* Darker Blue-Grey text color */
-}
-
-.hello {
+    align-items: flex-start;
+    color: #274352; /* Darker Blue-Grey text color */
+  }
+  
+  .hello {
     font-size: 1.75rem;
     font-weight: 100;
-    color: #455a64; /* Darker Blue-Grey text color */
-}
-
-.introName {
-    color: #607d8b; /* Blue-Grey name color */
-}
-
-.introPara {
+    color: #3a4e57; /* Darker Blue-Grey text color */
+  }
+  
+  .introName {
+    color: #475f6b; /* Blue-Grey name color */
+  }
+  
+  .introPara {
     font-size: small;
     font-weight: 300;
     letter-spacing: 1px;
-    color: #455a64; /* Darker Blue-Grey paragraph color */
-}
-
-.btn {
+    color: #394b53; /* Darker Blue-Grey paragraph color */
+  }
+  
+  .btn {
     background: #607d8b; /* Blue-Grey button background color */
     color: white; /* Button text color */
     margin: 1rem 0;
     padding: 0.75rem 1.5rem;
     border: none;
-    border-radius: 2rem;   
-}
-
-.btnImg {
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .btn:hover {
+    background: #546e7a; /* Darker shade on hover */
+  }
+  
+  .btnImg {
     object-fit: cover;
-    margin: 0 0.25rem;
-    height: 1rem;
-}
-
-@media screen and (max-width: 480px) {
+    margin: -7px 0.25rem;
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+  
+  @media screen and (max-width: 480px) {
     .bg {
-        right: -20vw;
+      right: -20vw;
     }
-}
+  }
+  

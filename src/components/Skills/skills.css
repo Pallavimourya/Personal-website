@@ -1,74 +1,105 @@
 #skills {
-    overflow: hidden;
     width: 100vw;
-    max-width: 65rem;
+    max-width: 70rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin: 0 auto; 
+    margin: 0 auto;
+    padding: 3rem 1.5rem; /* Padding for spacing */
+    background: #f9f9f9; /* Light grey background for contrast */
+    border-radius: 0.75rem; /* Rounded corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
 }
 
 .skillsTitle {
-    font-size: 3rem;
-    font-weight: 600;
-    padding-top: 3rem;
+    font-size: 2.5rem;
+    font-weight: 700;
     margin-bottom: 1.5rem;
-    color: #607d8b; /* Blue-Grey for title color */
+    color: #333; /* Darker text color for better readability */
+    text-transform: uppercase; /* Uppercase for emphasis */
 }
 
 .skillsDesc {
-    font-weight: 200;
-    font-size: 1rem;
-    max-width: 50rem;
-    padding: 0 2rem;
-    color: #455a64; /* Darker Blue-Grey for description color */
+    font-weight: 300;
+    font-size: 1.1rem;
+    max-width: 60rem;
+    margin: 0 auto 2rem; /* Centered with bottom margin */
+    color: #666; /* Medium grey for description */
 }
 
 .skillsBars {
-    margin: 1.5rem;
-    width: 100vw;
-    max-width: 80%;
-    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    gap: 2rem;
+    width: 100%;
+    max-width: 90%;
 }
 
 .skillsBar {
     display: flex;
-    margin: 1rem;
-    padding: 1.5rem 2rem;
+    align-items: center;
+    padding: 1.25rem 1.75rem;
     border-radius: 0.5rem;
-    background: #B0BEC5; /* Blue-Grey background */
+    background: #ffffff; /* White background for bars */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: 100%;
+    max-width: 700px; /* Limit max width for better readability */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.skillsBar:hover {
+    transform: scale(1.02); /* Slight zoom effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
 }
 
 .skillsBarImg {
     object-fit: cover;
-    height: 3rem;
-    width: 3rem;
-    margin-right: 2rem;
+    height: 4rem; /* Larger for better visual balance */
+    width: 4rem;
+    margin-right: 1.5rem; /* Reduced margin for a tighter layout */
+    border-radius: 50%; /* Circular images */
 }
 
 .skillsBarText {
-    font-size: 0.9rem;
-    font-weight: 200;
-    color: #455a64; /* Darker Blue-Grey for bar text color */
+    font-size: 1rem;
+    font-weight: 300; /* Slightly lighter text */
+    color: #333; /* Darker text color for better readability */
+    text-align: left; /* Align text to the left within bar */
+}
+
+.skillsBarText h2 {
+    margin: 0 0 0.5rem; /* Margin adjustments for heading */
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #607d8b; /* Blue-Grey for headings */
+}
+
+.skillsBarText p {
+    margin: 0;
 }
 
 @media screen and (max-width: 720px) {
-    .skillsBarText > p {
-        font-size: 2vw;
-    } 
+    .skillsBarImg {
+        height: 3.5rem;
+        width: 3.5rem;
+    }
+    .skillsBarText {
+        font-size: 0.95rem;
+    }
 }
 
 @media screen and (max-width: 480px) {
-    .skillsBarText > p {
-        font-size: 3vw;
-    }
     .skillsBarImg {
-        height: 2.25rem;
-        width: 2.25rem;
+        height: 3rem;
+        width: 3rem;
     }
-    .skillsBarText > h2 {
-        font-size: 5vw;
+    .skillsBarText h2 {
+        font-size: 1rem;
+    }
+    .skillsBarText p {
+        font-size: 0.85rem;
     }
 }

@@ -1,0 +1,154 @@
+/* src/components/Certificate/Certificate.css */
+
+#certificates {
+    padding: 3rem 1.5rem;
+    background: #f5f5f5; /* Light grey background */
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 1.5rem auto;
+    max-width: 90%;
+    text-align: center;
+}
+
+/* Title and Description */
+.certificatePageTitle {
+    font-size: 2rem;
+    color: #455a64; /* Darker Blue-Grey */
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+.certificatePageTitle::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 40px;
+    background: #607d8b; /* Blue-Grey accent */
+    border-radius: 2px;
+}
+
+.certificateDesc {
+    font-weight: 300;
+    font-size: 0.9rem;
+    color: #455a64; /* Darker Blue-Grey */
+    margin-bottom: 1.5rem;
+    max-width: 600px;
+    margin: auto;
+    line-height: 1.5;
+}
+
+/* Accordion Styles */
+.accordionSection {
+    text-align: left;
+    margin-top: 1.5rem;
+}
+
+.accordion {
+    background-color: #ffffff; /* White background */
+    color: #455a64; /* Darker Blue-Grey */
+    cursor: pointer;
+    padding: 1rem;
+    width: 100%;
+    border: 1px solid #e0e0e0; /* Light border */
+    text-align: left;
+    outline: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.accordion::after {
+    content: '\002B'; /* Plus symbol */
+    font-size: 1.2rem;
+    color: #607d8b; /* Blue-Grey */
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+}
+
+.accordion.active::after {
+    transform: rotate(45deg); /* Rotate plus to cross */
+}
+
+.accordion:hover, .accordion.active, .accordion:focus {
+    background-color: #f0f8f5; /* Slightly tinted light background */
+    border-color: #607d8b; /* Blue-Grey accent */
+}
+
+.accordionContent {
+    padding: 0 1rem;
+    background-color: #ffffff; /* White background */
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.4s ease, padding 0.3s ease;
+    border-radius: 0 0 0.5rem 0.5rem;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    visibility: hidden;
+}
+
+.accordionContent.show {
+    max-height: 600px;
+    padding: 1rem;
+    visibility: visible;
+}
+
+.certificateOptions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.certificateOption {
+    display: flex;
+    align-items: center;
+    margin: 0.8rem 0;
+    text-align: left;
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #e0e0e0; /* Light border */
+    border-radius: 0.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.certificateOption:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.certificateOption a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #455a64; /* Darker Blue-Grey */
+    transition: color 0.3s ease;
+}
+
+.certificateOption a:hover {
+    color: #607d8b; /* Blue-Grey */
+}
+
+.certificateOption img {
+    height: 3rem;
+    width: auto;
+    margin-right: 1rem;
+    border-radius: 0.25rem;
+}
+
+@media screen and (max-width: 768px) {
+    .certificateOption img {
+        height: 2.5rem;
+    }
+}

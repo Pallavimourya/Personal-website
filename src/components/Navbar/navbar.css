@@ -1,14 +1,11 @@
 .navbar {
-    background: rgba(176, 190, 197, 0.8);
+    background: rgba(147, 166, 176, 0.8);
     height: 5rem;
     width: 100vw;
-    max-width: 75rem;
-    margin: 0 auto;
     padding: 1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: sticky;
     top: 0;
     z-index: 3;
 }
@@ -62,27 +59,40 @@
 .mobMenu {
     object-fit: cover;
     height: 1.8rem;
+    cursor: pointer;
 }
 
 .navMenu {
     position: absolute;
-    top: 4rem;
-    right: 4rem;
-    z-index: 2;
-    display: flex;
+    top: 5rem;
+    right: 1rem;
+    z-index: 5;
+    display: none;
     flex-direction: column;
-    padding: 0.5rem;
-    height: fit-content;
+    padding: 1rem;
     min-width: 15rem;
     background: #B0BEC5; /* Blue-grey menu background */
     border-radius: 1rem;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.navMenu.show {
+    display: flex;
+    transform: translateY(0);
+    opacity: 1;
 }
 
 .listItem {
     color: black; /* Black text */
     padding: 0.5rem 3rem;
-    margin: 0.25rem;
+    margin: 0.25rem 0;
     background: white; /* White item background */
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+
+.listItem:hover {
+    background-color: #CFD8DC; /* Slightly darker on hover */
 }
 
 @media screen and (max-width: 720px) {
