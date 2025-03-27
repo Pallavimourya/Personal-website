@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/pallavi-website/static/css/main.d5a877a2.css",
-    "main.js": "/pallavi-website/static/js/main.0eb56f5d.js",
+    "main.js": "/pallavi-website/static/js/main.e25a8087.js",
     "static/media/project-2.png": "/pallavi-website/static/media/project-2.69c4c072c1f2a0bb583d.png",
     "static/media/project-3.png": "/pallavi-website/static/media/project-3.50f31518fbaa9db6d6c1.png",
     "static/media/image.png": "/pallavi-website/static/media/image.746aa4cfde27a96aef1e.png",
@@ -21,10 +21,10 @@
     "static/media/mediumicon.png": "/pallavi-website/static/media/mediumicon.68228eb1bd0612627cf5.png",
     "index.html": "/pallavi-website/index.html",
     "main.d5a877a2.css.map": "/pallavi-website/static/css/main.d5a877a2.css.map",
-    "main.0eb56f5d.js.map": "/pallavi-website/static/js/main.0eb56f5d.js.map"
+    "main.e25a8087.js.map": "/pallavi-website/static/js/main.e25a8087.js.map"
   },
   "entrypoints": [
     "static/css/main.d5a877a2.css",
-    "static/js/main.0eb56f5d.js"
+    "static/js/main.e25a8087.js"
   ]
 }
