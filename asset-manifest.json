@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/pallavi-website/static/css/main.d5a877a2.css",
+    "main.js": "/pallavi-website/static/js/main.0eb56f5d.js",
+    "static/media/project-2.png": "/pallavi-website/static/media/project-2.69c4c072c1f2a0bb583d.png",
+    "static/media/project-3.png": "/pallavi-website/static/media/project-3.50f31518fbaa9db6d6c1.png",
+    "static/media/image.png": "/pallavi-website/static/media/image.746aa4cfde27a96aef1e.png",
+    "static/media/ui-design.png": "/pallavi-website/static/media/ui-design.3e39f2a533dd90d029bb.png",
+    "static/media/linkedinicon.png": "/pallavi-website/static/media/linkedinicon.456d4adca122b4b2b722.png",
+    "static/media/app-design.png": "/pallavi-website/static/media/app-design.4a11dcf60e64fd61ee39.png",
+    "static/media/website-design.png": "/pallavi-website/static/media/website-design.62cd306c65fc2a25078d.png",
+    "static/media/hackerrank.png": "/pallavi-website/static/media/hackerrank.b9e4561d15a972977ba2.png",
+    "static/media/project-1.png": "/pallavi-website/static/media/project-1.8dc4b8e67ad697b5e907.png",
+    "static/media/githubicon.png": "/pallavi-website/static/media/githubicon.fc3cbc0a3339fd94a570.png",
+    "static/media/udemy.png": "/pallavi-website/static/media/udemy.0f00fe86ddf2b2db5c9b.png",
+    "static/media/gmailicon.png": "/pallavi-website/static/media/gmailicon.3bc8228138d76c797a36.png",
+    "static/media/coursera.png": "/pallavi-website/static/media/coursera.76bb0eb581ac4f118ca8.png",
+    "static/media/menu.png": "/pallavi-website/static/media/menu.cc100dcc561a7182c2b0.png",
+    "static/media/hireme.png": "/pallavi-website/static/media/hireme.e91ecf77fb6040aee952.png",
+    "static/media/logo.png": "/pallavi-website/static/media/logo.186bafb43631fb2a942c.png",
+    "static/media/mediumicon.png": "/pallavi-website/static/media/mediumicon.68228eb1bd0612627cf5.png",
+    "index.html": "/pallavi-website/index.html",
+    "main.d5a877a2.css.map": "/pallavi-website/static/css/main.d5a877a2.css.map",
+    "main.0eb56f5d.js.map": "/pallavi-website/static/js/main.0eb56f5d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d5a877a2.css",
+    "static/js/main.0eb56f5d.js"
+  ]
+}
